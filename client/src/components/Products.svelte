@@ -1,10 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
 
-    import W87 from "$lib/images/w-87.jpg";
-    import Drone from "$lib/images/drone.jpg";
-    import Iphone from "$lib/images/iphone.png";
-
     let products = [];
 
     onMount(async () => {

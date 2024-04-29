@@ -9,7 +9,7 @@
         <div>
             <h2 class="text-3xl py-5">Kontaktieren Sie uns</h2>
 
-            <div class="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
+            <div class="bg-white rounded p-4 px-4 md:p-8 mb-6">
                 <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
                     <div class="text-gray-600">
                         <p class="font-medium text-lg">Persönliche Details</p>
@@ -77,7 +77,7 @@
 
                             <div class="md:col-span-5 text-right">
                                 <div class="inline-flex items-end">
-                                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+                                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Senden</button>
                                 </div>
                             </div>
 

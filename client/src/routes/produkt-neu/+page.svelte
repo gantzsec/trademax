@@ -37,7 +37,7 @@
 <form on:submit={handleSubmit} class="container max-w-screen-lg mx-auto mt-20">
     <h2 class="font-semibold text-xl text-gray-600">Füge ein neues Produkt dem Sortiment hinzu</h2>
 
-    <div class="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
+    <div class="bg-white rounded p-4 px-4 md:p-8 mb-6">
         <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
             <div class="lg:col-span-2">
                 <div class="md:col-span-3">
@@ -54,7 +54,7 @@
 
     <div class="md:col-span-5 text-right">
         <div class="inline-flex items-end">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Senden</button>
         </div>
     </div>
 </form>
