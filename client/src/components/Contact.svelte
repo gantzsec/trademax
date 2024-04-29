@@ -4,10 +4,10 @@
 </script>
 
 <Header />
-<div class="min-h-screen p-6 flex items-center justify-center">
+<div class="min-h-screen p-6 flex justify-center mt-20">
     <div class="container max-w-screen-lg mx-auto">
         <div>
-            <h2 class="font-semibold text-xl text-gray-600">Kontaktieren Sie uns</h2>
+            <h2 class="text-3xl py-5">Kontaktieren Sie uns</h2>
 
             <div class="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
                 <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">

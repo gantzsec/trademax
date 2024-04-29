@@ -1,4 +1,7 @@
 <script>
+    import Header from "../../components/Header.svelte";
+    import Footer from "../../components/Footer.svelte";
+
     import { createEventDispatcher } from 'svelte';
 
     let productName = '';
@@ -30,16 +33,29 @@
     };
 </script>
 
-<div class="flex flex-col items-center mt-20">
-    <form on:submit={handleSubmit} class="flex flex-col gap-4">
-        <label>
-            <span class="text-2xl pr-3">Bezeichnung:</span>
-            <input class="rounded border-2 border-black float-right" type="text" bind:value={productName} required />
-        </label>
-        <label>
-            <span class="text-2xl pr-3">Preis:</span>
-            <input class="rounded border-2 border-black float-right" type="number" step="0.01" bind:value={productPrice} required />
-        </label>
-        <button class="rounded border-2 border-black" type="submit">Add Product</button>
-    </form>
-</div>
+<Header />
+<form on:submit={handleSubmit} class="container max-w-screen-lg mx-auto mt-20">
+    <h2 class="font-semibold text-xl text-gray-600">Füge ein neues Produkt dem Sortiment hinzu</h2>
+
+    <div class="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
+        <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
+            <div class="lg:col-span-2">
+                <div class="md:col-span-3">
+                    <h2 class="text-xl pr-3 text-gray-600">Bezeichnung:</h2>
+                    <input class="transition-all flex items-center h-10 border mt-1 rounded px-4 w-full bg-gray-50" type="text" bind:value={productName} required />
+                </div>
+
+                <div class="md:col-span-3">
+                    <h2 class="text-xl pr-3 text-gray-600">Preis:</h2>
+                    <input class="transition-all flex items-center h-10 border mt-1 rounded px-4 w-full bg-gray-50" type="number" step="0.01" bind:value={productPrice} required />                            </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="md:col-span-5 text-right">
+        <div class="inline-flex items-end">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+        </div>
+    </div>
+</form>
+<Footer />
